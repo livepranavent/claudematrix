@@ -3,7 +3,7 @@
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/livepranavent/claudematrix/ci.yml?style=flat-square)](https://github.com/livepranavent/claudematrix/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![RTK Savings](https://img.shields.io/badge/RTK_Token_Savings-85%25-green)](#)
+[![RTK Token Savings](https://img.shields.io/badge/RTK_Token_Savings-85%25-green.svg?logo=github&labelColor=191919&color=40C463)](https://claude.dev/godmode)
 
 > "The only AI workspace where **60-90% of tokens don't cost you**" – *Mr Hanamant S Batakurki, CTO at Pranav Ent.*
 
