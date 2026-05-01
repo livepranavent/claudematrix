@@ -1,0 +1,23 @@
+{
+  "name": "Deep Research",
+  "description": "Analysis-heavy configuration for complex discovery",
+  "model": "claude-opus-4-6",
+  "maxContextTokens": 128000,
+  "rtk": {
+    "enabled": true,
+    "optimizationLevel": "minimal"
+  },
+  "tools": {
+    "parallelism": 2,
+    "timeout": 300000
+  },
+  "autoApprove": [
+    "Research queries",
+    "Pattern analysis"
+  ],
+  "requiredFeatures": [
+    "extendedThinking",
+    "multiAgentReview"
+  ],
+  "contextPreservation": true
+}

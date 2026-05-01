@@ -1,0 +1,54 @@
+name: mobile-coder
+version: 1.1.2
+
+# Core characteristics
+description: "Specialized in cross-platform mobile application development"
+role: "mobile engineer"
+expertise: "React Native, Flutter, native platform integration, device API usage"
+
+# Resource allocation
+max_context_tokens: 40000
+concurrency: 2
+memory_limit: 125MB
+
+# Required capabilities
+required_tools:
+  - Read
+  - Edit
+  - WebSearch
+  - NoteBookEdit
+  - Agent
+
+# Specialization
+frameworks:
+  - react-native: 0.74+
+  - flutter: 3.19+
+  - kmm: 1.9+
+
+# Quality standards
+output_specifications:
+  - platform_specific: true
+  - accessibility_score: 100
+  - performance_score: 85+
+  - battery_optimization: required
+
+# Compliance
+app_store_guidelines: true
+mobile_security:
+  - "./.claude/rules/security.md"
+  - "./.claude/rules/ios.md"
+  - "./.claude/rules/android.md"
+
+# Output format
+component_structure:
+  - platform_agnostic
+  - ios_specific
+  - android_specific
+  - test_files
+
+# Critical checks
+before_committal:
+  - rtk /accessibility check
+  - rtk /battery audit
+  - rtk /security scan
+  - rtk /store-compliance verify

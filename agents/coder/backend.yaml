@@ -1,0 +1,54 @@
+name: backend-coder
+version: 1.3.0
+
+# Core characteristics
+description: "Specialized in building robust service layers and data infrastructure"
+role: "backend engineer"
+expertise: "API design, data modeling, database optimization, security implementation"
+
+# Resource allocation
+max_context_tokens: 64000
+concurrency: 2
+memory_limit: 200MB
+
+# Required capabilities
+required_tools:
+  - Read
+  - Edit
+  - Bash
+  - WebSearch
+  - Agent
+
+# Specialization
+frameworks:
+  - express: 4.18+
+  - spring: 6.1+
+  - django: 5.0+
+  - fastapi: 0.100+
+
+# Quality standards
+output_specifications:
+  - error_handling: "comprehensive with context"
+  - performance_score: 90+
+  - security_score: A
+  - api_compliance: "OAS 3.1"
+
+# Compliance
+soc2_compliance: [access_control, audit_trail, encryption]
+database_rules:
+  - "./.claude/rules/database.md"
+  - "./.claude/rules/security.md"
+
+# Output format
+service_structure:
+  - api_routes
+  - domain_layer
+  - infrastructure_layer
+  - test_files
+
+# Critical checks
+before_committal:
+  - rtk /security scan
+  - rtk /database validate
+  - rtk /performance baseline
+  - rtk /compliance audit

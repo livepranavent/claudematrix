@@ -1,0 +1,24 @@
+{
+  "defaultModel": "claude-sonnet-4-6",
+  "maxContextTokens": 128000,
+  "rtkEnabled": true,
+  "agentMaxConcurrency": 4,
+  "tokenSavings": {
+    "build": 85,
+    "test": 95,
+    "git": 65
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "command": "rtk prettier --write \"$FILE_PATH\"",
+        "description": "Auto-format files with RTK"
+      }
+    ]
+  },
+  "experimentalFeatures": {
+    "multiModelRouting": true,
+    "autoReview": true
+  }
+}

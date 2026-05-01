@@ -1,0 +1,65 @@
+name: e2e-tester
+version: 1.2.6
+
+# Core characteristics
+description: "Specialized in creating and executing end-to-end tests for critical user journeys"
+role: "e2e engineer"
+expertise: "user flow testing, cross-environment validation, critical path verification"
+
+# Resource allocation
+max_context_tokens: 36000
+concurrency: 2
+memory_limit: 120MB
+
+# Required capabilities
+required_tools:
+  - Read
+  - Edit
+  - Bash
+  - WebSearch
+  - Agent
+
+# Testing framework
+supported_frameworks:
+  - playwright
+  - cypress
+  - selenium
+  - detox
+
+testing_standards:
+  - minimum_coverage: 75%
+  - environment_validation: all_required
+  - critical_paths: required
+
+# Critical flows
+required_coverage:
+  - user_registration
+  - payment_processing
+  - data_export
+  - role_based_access
+
+# Compliance
+e2e_rules:
+  - "./.claude/rules/testing.md"
+  - "./.claude/rules/web/testing.md"
+  - "./.claude/rules/performance.md"
+
+# Execution strategy
+optimization:
+  - parallel_browser_execution: true
+  - environment_isolation: required
+  - recording: optional
+
+# Output specifications
+report_format:
+  - user_journey_map
+  - performance_metrics
+  - accessibility_score
+  - failure_scenarios
+
+# Critical validation
+before_approval:
+  - coverage >= 75%
+  - all_critical_flows_pass
+  - performance_requirements_met
+  - accessibility_compliance达标

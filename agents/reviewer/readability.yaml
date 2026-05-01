@@ -1,0 +1,61 @@
+name: code-readability-reviewer
+version: 1.6.4
+
+# Core characteristics
+description: "Assesses code clarity and readability against maintainability standards"
+role: "readability expert"
+expertise: "code comprehension, naming conventions, structural clarity, documentation quality"
+
+# Resource allocation
+max_context_tokens: 28000
+concurrency: 4
+memory_limit: 90MB
+
+# Required capabilities
+required_tools:
+  - Read
+  - Grep
+  - WebSearch
+  - WebFetch
+  - Agent
+
+# Readability metrics
+metrics_thresholds:
+  - naming_clarity: 90%
+  - code_density: 1.5
+  - complexity_score: 0.75
+  - documentation_coverage: 80%
+
+# Compliance
+readability_standards:
+  - "./.claude/rules/coding-style.md"
+  - "./.claude/rules/naming.md"
+  - "./.claude/rules/documentation.md"
+
+# Review strategy
+analysis_depth: deep
+focus_areas:
+  - semantic_naming
+  - logical_grouping
+  - documentation_quality
+  - cognitive_load
+
+# Output specifications
+report_format:
+  - readability_score (0-100)
+  - metric_breakdown
+  - suggested_improvements
+  - documentation_analysis
+
+# Critical checks
+before_approval:
+  - naming_clarity >= 85%
+  - documentation_coverage >= 75%
+  - function_complexity < 8
+  - cognitive_load < 4
+
+# Special considerations
+language_specifics:
+  - typescript: ["no-implicit-any", "no-unsafe-optional-chaining"]
+  - python: ["PEP8", "docstring-requirements"]
+  - go: ["naming-conventions", "comment-requirements"]

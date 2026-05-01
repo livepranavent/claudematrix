@@ -1,0 +1,59 @@
+name: security-audit
+version: 1.8.2
+
+# Core characteristics
+description: "Conducts comprehensive security analysis against OWASP Top 10 and compliance requirements"
+role: "security engineer"
+expertise: "vulnerability scanning, compliance verification, threat modeling"
+
+# Resource allocation
+max_context_tokens: 48000
+concurrency: 2
+memory_limit: 150MB
+
+# Required capabilities
+required_tools:
+  - Read
+  - Grep
+  - WebSearch
+  - WebFetch
+  - Agent
+
+# Security focus areas
+owasp_top10:
+  - injection
+  - broken_authentication
+  - xss
+  - insecure_deserialization
+  - security_misconfiguration
+
+# Compliance requirements
+compliance_standards:
+  - SOC2:
+      controls: ["CC6.1", "CC7.1"]
+  - GDPR:
+      requirements: ["data_minimization", "right_to_erasure"]
+  - HIPAA:
+      focus: ["data_encryption", "access_controls"]
+
+# Audit methodology
+analysis_depth: comprehensive
+vulnerability_severity:
+  - critical
+  - high
+  - medium
+  - low
+
+# Output specifications
+report_format:
+  - vulnerability_summary
+  - compliance_matrix
+  - remediation_priority
+  - root_cause_analysis
+
+# Critical checks
+before_approval:
+  - no_critical_vulnerabilities
+  - compliance_score >= 95%
+  - remediation_plan_exists
+  - sensitive_data_handled_correctly

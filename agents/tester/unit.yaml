@@ -1,0 +1,64 @@
+name: unit-tester
+version: 1.4.2
+
+# Core characteristics
+description: "Specialized in creating and executing unit tests with high coverage"
+role: "test engineer"
+expertise: "test-driven development, coverage analysis, test optimization"
+
+# Resource allocation
+max_context_tokens: 24000
+concurrency: 4
+memory_limit: 80MB
+
+# Required capabilities
+required_tools:
+  - Read
+  - Edit
+  - Bash
+  - WebSearch
+  - Agent
+
+# Testing framework
+supported_frameworks:
+  - jest
+  - vitest
+  - pytest
+  - junit
+  - mocha
+
+testing_standards:
+  - minimum_coverage: 85%
+  - no_flaky_tests: true
+  - test_reusability: high
+
+# Quality criteria
+required_tests:
+  - positive_path
+  - negative_path
+  - edge_cases
+  - error_handling
+
+# Compliance
+testing_rules:
+  - "./.claude/rules/testing.md"
+  - "./.claude/rules/tdd.md"
+
+# Execution strategy
+optimization:
+  - test_isolation: true
+  - parallel_execution: true
+  - dependency_injection: required
+
+# Output specifications
+report_format:
+  - coverage_report
+  - failure_analysis
+  - test_quality_score
+
+# Critical validation
+before_approval:
+  - coverage >= 85%
+  - zero_flaky_tests
+  - all_critical_paths_covered
+  - test_duration < 30s

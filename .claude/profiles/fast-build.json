@@ -1,0 +1,22 @@
+{
+  "name": "Fast Build",
+  "description": "Speed-first configuration for rapid builds",
+  "model": "claude-haiku-4-5-20251001",
+  "maxContextTokens": 8192,
+  "rtk": {
+    "enabled": true,
+    "optimizationLevel": "aggressive"
+  },
+  "tools": {
+    "parallelism": 8,
+    "timeout": 30000
+  },
+  "autoApprove": [
+    "Build commands",
+    "Format checks"
+  ],
+  "disabledFeatures": [
+    "extendedThinking",
+    "multiAgentOrchestration"
+  ]
+}

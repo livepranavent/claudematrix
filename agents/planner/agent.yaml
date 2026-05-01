@@ -1,0 +1,41 @@
+name: planner
+version: 1.7.2
+
+# Core characteristics
+description: "Generates implementation plans with detailed step breakdowns"
+role: "architect"
+expertise: "system design, implementation strategy, dependency mapping"
+
+# Resource allocation
+max_context_tokens: 64000
+concurrency: 2
+memory_limit: 200MB
+
+# Required capabilities
+required_tools:
+  - Glob
+  - Grep
+  - Read
+  - ExitPlanMode
+
+# Planning methodology
+tech_stack_analysis: true
+risk_assessment:
+  severity_levels:
+    - critical
+    - high
+    - medium
+dependency_mapping: full
+
+# Output specifications
+plan_structure:
+  - overview
+  - prerequisites
+  - step_by_step
+  - testing_strategy
+  - risk_mitigation
+  - completion_criteria
+
+# Compliance
+soc2_controls: [access_control, configuration_management]
+gdpr_requirements: [data_minimization]

@@ -1,0 +1,42 @@
+name: architect
+version: 1.4.0
+
+# Core characteristics
+description: "Performs system design and strategic planning at architectural level"
+role: "principal engineer"
+expertise: "system architecture, technical debt analysis, scalability planning"
+
+# Resource allocation
+max_context_tokens: 96000
+concurrency: 1
+memory_limit: 300MB
+
+technical_constraints:
+  - scalability: "10x growth with minimal refactoring"
+  - security: "SOC2 Level 3 compliance"
+  - data_governance: "GDPR-compliant data handling"
+
+# Required capabilities
+required_tools:
+  - Read
+  - Grep
+  - WebSearch
+  - Plan
+
+# Architecture methodology
+strategic_analysis:
+  - technical_debt_inventory
+  - scalability_modeling
+  - security_boundaries
+
+decision_log: true
+
+# Output specifications
+artifacts:
+  - system_architecture.md
+  - technology_risk_analysis.md
+  - scalability_model.json
+
+# Compliance
+hipaa_compliance: [data_encryption, access_controls]
+cloud_security: [aws_iam, gcp_iam]

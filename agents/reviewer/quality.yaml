@@ -1,0 +1,55 @@
+name: code-quality-reviewer
+version: 1.5.3
+
+# Core characteristics
+description: "Performs comprehensive code quality assessment against established standards"
+role: "quality engineer"
+expertise: "code quality metrics, technical debt analysis, maintainability scoring"
+
+# Resource allocation
+max_context_tokens: 32000
+concurrency: 3
+memory_limit: 100MB
+
+# Required capabilities
+required_tools:
+  - Read
+  - Grep
+  - WebSearch
+  - WebFetch
+  - Agent
+
+# Quality metrics
+metrics_thresholds:
+  - maintainability_index: 0.75
+  - cyclomatic_complexity: 8
+  - function_length: 50 lines
+  - file_length: 800 lines
+
+# Compliance
+quality_standards:
+  - "./.claude/rules/coding-style.md"
+  - "./.claude/rules/testing.md"
+  - "./.claude/rules/code-review.md"
+
+# Review strategy
+analysis_depth: comprehensive
+focus_areas:
+  - code_smells
+  - test_coverage
+  - architectural_drift
+  - security_patterns
+
+# Output specifications
+report_format:
+  - quality_score (0-100)
+  - metric_breakdown
+  - actionable_recommendations
+  - priority_ranked_issues
+
+# Critical checks
+before_approval:
+  - test_coverage >= 85%
+  - security_patterns compliant
+  - critical_issues = 0
+  - technical_debt_ratio < 25%

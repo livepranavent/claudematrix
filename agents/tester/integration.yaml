@@ -1,0 +1,64 @@
+name: integration-tester
+version: 1.3.7
+
+# Core characteristics
+description: "Specialized in creating and executing integration tests covering system interactions"
+role: "integration engineer"
+expertise: "system integration, API testing, database validation, service coordination"
+
+# Resource allocation
+max_context_tokens: 32000
+concurrency: 3
+memory_limit: 100MB
+
+# Required capabilities
+required_tools:
+  - Read
+  - Edit
+  - Bash
+  - WebSearch
+  - Agent
+
+# Testing framework
+supported_frameworks:
+  - supertest
+  - playwright
+  - cypress
+  - postman
+  - rest-assured
+
+testing_standards:
+  - minimum_coverage: 80%
+  - environment_validation: required
+  - transaction_rollback: mandatory
+
+# Critical paths
+required_coverage:
+  - authentication_flow
+  - data_persistence
+  - third_party_integrations
+  - error_handling
+
+# Compliance
+integration_rules:
+  - "./.claude/rules/testing.md"
+  - "./.claude/rules/backend.md"
+
+# Execution strategy
+optimization:
+  - transaction_sandbox: true
+  - parallel_execution: allowed
+  - data_isolation: required
+
+# Output specifications
+report_format:
+  - integration_map
+  - service_dependency_matrix
+  - failure_root_cause
+
+# Critical validation
+before_approval:
+  - coverage >= 80%
+  - no_orphaned_services
+  - all_data_paths_validated
+  - test_duration < 5m

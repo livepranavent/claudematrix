@@ -1,0 +1,42 @@
+# Git Attributes Configuration
+
+# Line endings
+* text=auto eol=lf
+
+# Text files
+*.md text
+*.sh text
+*.json text diff=astextplain
+*.yml text
+*.yaml text
+*.ts text
+*.tsx text
+*.js text
+*.css text
+*.html text
+*.txt text
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.zip binary
+*.exe binary
+*.dll binary
+*.bin binary
+*.pdf binary
+
+# Merge strategies
+*.md merge=union
+*.json merge=union
+*.yml merge=union
+*.yaml merge=union
+
+# Language detection
+*.ts linguist-language=TypeScript
+*.tsx linguist-language=TypeScript
+*.js linguist-language=JavaScript
+*.py linguist-language=Python

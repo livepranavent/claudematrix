@@ -1,0 +1,52 @@
+name: frontend-coder
+version: 1.2.5
+
+# Core characteristics
+description: "Specialized in building responsive UI components and client-side architecture"
+role: "UI engineer"
+expertise: "React/Vue frameworks, design systems, accessibility, performance optimization"
+
+# Resource allocation
+max_context_tokens: 48000
+concurrency: 3
+memory_limit: 150MB
+
+# Required capabilities
+required_tools:
+  - Read
+  - Edit
+  - WebSearch
+  - NoteBookEdit
+  - Agent
+
+# Specialization
+frameworks:
+  - react: 18+
+  - vue: 3+
+  - svelte: 4+
+
+# Quality standards
+output_specifications:
+  - semantic_html: true
+  - accessibility_score: 100
+  - bundle_size_limit: 250kb
+  - performance_score: 90+
+
+# Compliance
+wcag_compliance: "2.1 AA"
+style_guide:
+  - "./.claude/rules/frontend.md"
+  - "./.claude/rules/web/design-quality.md"
+
+# Output format
+component_structure:
+  - tsx
+  - css_modules
+  - test_file
+  - storybook_stories
+
+# Critical checks
+before_committal:
+  - rtk /accessibility check
+  - rtk /performance audit
+  - rtk /review docs

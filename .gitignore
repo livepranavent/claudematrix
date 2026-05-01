@@ -1,0 +1,52 @@
+# Generated .gitignore for Claude Godmode Workspace
+
+# Node.js
+node_modules/
+package-lock.json
+npm-debug.log
+
+# Python
+__pycache__/
+*.pyc
+
+# Build artifacts
+/dist/
+/build/
+/out/
+/.temp/
+/coverage/
+
+# Runtime
+.env
+.env.local
+.env.*.local
+
+# Editor directories
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project-specific
+/.claude/memory/
+/.claude/cache/
+/marketplace/plugins/*/node_modules/
+/sandbox/prompt-tests/**/__pycache__/
+
+# CLI-specific
+.rtfm/
+.claude-cli/
+
+# Binary output
+*.exe
+*.exe.map
+*.dmg
+*.wasm

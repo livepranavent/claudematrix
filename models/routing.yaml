@@ -1,0 +1,42 @@
+default_model: claude-sonnet-4-6
+primary_models:
+  - claude-sonnet-4-6
+  - claude-opus-4-6
+  - claude-haiku-4-5-20251001
+
+model_routing:
+  development:
+    type: "complex-coding"
+    models: [claude-opus-4-6, claude-sonnet-4-6]
+    threshold: 0.85
+  planning:
+    type: "architectural"
+    models: [claude-opus-4-6]
+    threshold: 0.9
+  review:
+    type: "quality-assessment"
+    models: [claude-sonnet-4-6, claude-haiku-4-5-20251001]
+    threshold: 0.8
+  security:
+    type: "compliance-check"
+    models: [claude-opus-4-6]
+    threshold: 0.95
+  documentation:
+    type: "clarity-focused"
+    models: [claude-sonnet-4-6]
+    threshold: 0.75
+
+context_management:
+  max_context_tokens: 128000
+  optimization_level: 0.85
+  cleanup_threshold: 0.6
+
+token_efficiency:
+  targets:
+    build: 0.85
+    test: 0.9
+    git: 0.7
+  monitoring: true
+
+model_benchmarks:
+  reference: benchmarks/quality.json

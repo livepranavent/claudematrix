@@ -1,0 +1,32 @@
+name: workflow-orchestrator
+version: 2.3.1
+
+# Execution settings
+deployment: cloud
+concurrency: 4
+max_retries: 3
+
+# Agent dependencies
+required_profiles:
+  - deep-research
+  - enterprise-safe
+
+# Work coordination
+techniques:
+  - parallel_execution
+  - context_sharing
+  - dependency_resolving
+
+# Monitoring
+health_check_interval: 5m
+log_rotation: 24h
+
+# Compliance
+soc2_controls:
+  - access_control
+  - audit_trail
+  - encryption_management
+
+gdpr_compliance:
+  - data_minimization
+  - breach_notification
