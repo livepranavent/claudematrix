@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Godmode Workspace - Telemetry Dashboard</title>
+    <meta name="description" content="Live telemetry dashboard for Claude Godmode Workspace at Pranav Enterprises.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="blob blob-purple"></div>
+        <div class="blob blob-green"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="header-logo">
+                <div class="logo-icon">🤖</div>
+                <h1>Claude Godmode <span>Workspace</span></h1>
+            </div>
+            <div class="header-status">
+                <span class="status-indicator"></span>
+                <span id="system-status">Operational</span>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero-metrics">
+                <div class="metric-card primary-card glass">
+                    <h3>Total Token Savings</h3>
+                    <div class="value" id="tokens-saved">--</div>
+                    <div class="trend positive">↑ <span id="savings-percent">--</span>% highly optimized</div>
+                </div>
+                <div class="metric-card glass">
+                    <h3>Cost Recovered</h3>
+                    <div class="value" id="cost-savings">--</div>
+                    <div class="trend">USD / Month</div>
+                </div>
+                <div class="metric-card glass">
+                    <h3>Engineering Time Saved</h3>
+                    <div class="value" id="hours-saved">--</div>
+                    <div class="trend positive">Equivalent to <span id="fte-equivalent">--</span> FTEs</div>
+                </div>
+            </section>
+
+            <div class="dashboard-grid">
+                <section class="details-section glass">
+                    <h2>Agent Orchestration</h2>
+                    <div class="agent-stats">
+                        <div class="stat-item">
+                            <span class="label">Active Agents</span>
+                            <span class="data highlight-purple" id="active-agents">--</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Tasks Completed</span>
+                            <span class="data" id="tasks-completed">--</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Autonomous Commits</span>
+                            <span class="data" id="autonomous-commits">--</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="details-section glass">
+                    <h2>Compliance & Security</h2>
+                    <div class="agent-stats">
+                        <div class="stat-item">
+                            <span class="label">SOC2 Violations</span>
+                            <span class="data highlight-green" id="soc2-violations">--</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">GDPR Passed</span>
+                            <span class="data" id="gdpr-passed">--</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Vulns Prevented</span>
+                            <span class="data highlight-purple" id="vulns-prevented">--</span>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="details-section glass span-2">
+                    <h2>Performance & Impact (Last 30 Days)</h2>
+                    <div class="impact-grid">
+                        <div class="impact-card">
+                            <h4>PR Review Time</h4>
+                            <p id="pr-review-time">--</p>
+                            <span class="impact-badge">-<span id="pr-review-reduction">--</span>%</span>
+                        </div>
+                        <div class="impact-card">
+                            <h4>Cache Hit Rate</h4>
+                            <p id="cache-hit-rate">--</p>
+                            <span class="impact-badge">Optimized</span>
+                        </div>
+                        <div class="impact-card">
+                            <h4>Context Window Util</h4>
+                            <p id="context-utilization">--</p>
+                            <span class="impact-badge">Maximized</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <p>Verified in production at <strong>Pranav Enterprises</strong> &bull; Powered by Claude Godmode</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
