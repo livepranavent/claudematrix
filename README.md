@@ -2,7 +2,7 @@
 **Elevate your development with the most efficient AI-powered workspace** [![GitHub Stars](https://img.shields.io/github/stars/livepranavent/claudematrix?style=social)](https://github.com/livepranavent/claudematrix)
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/livepranavent/claudematrix/ci.yml?style=flat-square)](https://github.com/livepranavent/claudematrix/actions)
-[![Version](https://img.shields.io/github/v/release/livepranavent/claudematrix?style=flat-square&color=blue)](https://github.com/livepranavent/claudematrix/releases)
+[![Releases](https://img.shields.io/github/release/livepranavent/claudematrix.svg?label=Releases&color=blueviolet&style=flat-square)](https://github.com/livepranavent/claudematrix/releases)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
 [![Discord](https://img.shields.io/discord/1234567890?label=discord&style=flat-square&logo=discord&color=5865F2)](https://discord.gg/claudematrix)
 [![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg?style=flat-square)](#)
