@@ -1,0 +1,20 @@
+{
+  "currency": "USD",
+  "pricing_tier": "claude-3-7-sonnet",
+  "input_cost_per_m": 3.00,
+  "output_cost_per_m": 15.00,
+  "cache_write_cost_per_m": 3.75,
+  "cache_read_cost_per_m": 0.30,
+  "optimization_metrics": {
+    "standard_monthly_cost": 1560.00,
+    "rtk_optimized_cost": 276.00,
+    "net_savings": 1284.00,
+    "roi_multiplier": 5.6
+  },
+  "token_distribution": {
+    "code_generation": "35%",
+    "context_reading": "45%",
+    "security_analysis": "12%",
+    "refactoring": "8%"
+  }
+}
