@@ -1,7 +1,7 @@
 # 🚀 Claude Godmode Workspace
-**Elevate your development with the most efficient AI-powered workspace** [![GitHub Stars](https://img.shields.io/github/stars/godmode-dev/claudematrix?style=social)](https://github.com/godmode-dev/claudematrix)
+**Elevate your development with the most efficient AI-powered workspace** [![GitHub Stars](https://img.shields.io/github/stars/livepranavent/claudematrix?style=social)](https://github.com/livepranavent/claudematrix)
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/godmode-dev/claudematrix/ci.yml?style=flat-square)](https://github.com/godmode-dev/claudematrix/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/livepranavent/claudematrix/ci.yml?style=flat-square)](https://github.com/livepranavent/claudematrix/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![RTK Savings](https://img.shields.io/badge/RTK_Token_Savings-85%25-green)](#)
 
@@ -30,7 +30,7 @@
 
 ```bash
 # 1. Clone this workspace
-git clone https://github.com/godmode-dev/claudematrix.git
+git clone https://github.com/livepranavent/claudematrix.git
 
 # 2. Supercharge your CLI (requires Claude Code)
 curl -fsSL https://claude.dev/godmode | bash
@@ -105,5 +105,5 @@ Built with love by:
 - **Mr Hanamant S Batakurki** ([live@pranavent.com](mailto:live@pranavent.com))
 - The open-source community pushing AI development forward
 
-[![GitHub Stars](https://img.shields.io/github/stars/godmode-dev/claudematrix?style=social)](https://github.com/godmode-dev/claudematrix)
+[![GitHub Stars](https://img.shields.io/github/stars/livepranavent/claudematrix?style=social)](https://github.com/livepranavent/claudematrix)
 > **"Don't just optimize code - optimize your entire engineering economy"**
