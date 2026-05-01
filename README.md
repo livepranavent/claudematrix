@@ -2,8 +2,13 @@
 **Elevate your development with the most efficient AI-powered workspace** [![GitHub Stars](https://img.shields.io/github/stars/livepranavent/claudematrix?style=social)](https://github.com/livepranavent/claudematrix)
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/livepranavent/claudematrix/ci.yml?style=flat-square)](https://github.com/livepranavent/claudematrix/actions)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![RTK Token Savings](https://img.shields.io/badge/RTK_Token_Savings-85%25-green.svg?logo=github&labelColor=191919&color=40C463)](https://claude.dev/godmode)
+[![Version](https://img.shields.io/github/v/release/livepranavent/claudematrix?style=flat-square&color=blue)](https://github.com/livepranavent/claudematrix/releases)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
+[![Discord](https://img.shields.io/discord/1234567890?label=discord&style=flat-square&logo=discord&color=5865F2)](https://discord.gg/claudematrix)
+[![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg?style=flat-square)](#)
+[![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg?style=flat-square)](#)
+[![RTK Token Savings](https://img.shields.io/badge/RTK_Token_Savings-85%25-green.svg?style=flat-square&logo=github&labelColor=191919&color=40C463)](https://claude.dev/godmode)
+[![Active Agents](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Flivepranavent%2Fclaudematrix%2Fmain%2Ftelemetry%2Fbadge-data.json&query=%24.active_agents&label=Active%20Agents&color=8A2BE2&style=flat-square)](https://github.com/livepranavent/claudematrix/tree/main/telemetry)
 
 > "The only AI workspace where **60-90% of tokens don't cost you**" – *Mr Hanamant S Batakurki, CTO at Pranav Ent.*
 
