@@ -1,0 +1,36 @@
+{
+  "name": "Enterprise Safe",
+  "description": "Maximum security for regulated environments",
+  "model": "claude-sonnet-4-6",
+  "maxContextTokens": 96000,
+  "rtk": {
+    "enabled": true,
+    "optimizationLevel": "secure",
+    "disallowedCommands": [
+      "git push --force",
+      "rm -rf",
+      "docker rm",
+      "delete *"
+    ]
+  },
+  "compliance": {
+    "soc2": true,
+    "gdpr": true,
+    "hipaa": true,
+    "auditTrail": true
+  },
+  "security": {
+    "sensitiveDataDetection": true,
+    "autoRedact": true,
+    "encryption": "FIPS-140-2"
+  },
+  "experimentalFeatures": {
+    "multiAgentOrchestration": false,
+    "extendedThinking": true
+  },
+  "approvalRequired": [
+    "All production deployments",
+    "Security-critical changes",
+    "Data schema modifications"
+  ]
+}

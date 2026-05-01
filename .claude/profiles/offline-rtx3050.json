@@ -1,0 +1,27 @@
+{
+  "name": "Offline RTX 3050",
+  "description": "Optimized for local GPU with RTX 3050",
+  "model": "qwen3-vl:235b-local",
+  "maxContextTokens": 8192,
+  "rtk": {
+    "enabled": true,
+    "optimizationLevel": "aggressive"
+  },
+  "inference": {
+    "maxBatchSize": 4,
+    "contextCompression": true,
+    "gpuMemoryUsage": 80
+  },
+  "tools": {
+    "parallelism": 1,
+    "timeout": 60000
+  },
+  "disabledFeatures": [
+    "multiModelRouting",
+    "cloudModelAccess"
+  ],
+  "requiredHardware": [
+    "NVIDIA RTX 3050",
+    "12GB GPU RAM"
+  ]
+}
