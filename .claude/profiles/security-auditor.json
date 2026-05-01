@@ -1,0 +1,25 @@
+{
+  "name": "Security Auditor",
+  "description": "Continuous security scanning and vulnerability analysis agent",
+  "model": "claude-sonnet-4-6",
+  "maxContextTokens": 96000,
+  "rtk": {
+    "enabled": true,
+    "optimizationLevel": "secure"
+  },
+  "compliance": {
+    "soc2": true,
+    "gdpr": true,
+    "hipaa": true
+  },
+  "security": {
+    "sensitiveDataDetection": true,
+    "autoRedact": true,
+    "dependencyVulnerabilityScan": true
+  },
+  "responsibilities": [
+    "Code security audits",
+    "OWASP Top 10 validation",
+    "Secrets detection"
+  ]
+}

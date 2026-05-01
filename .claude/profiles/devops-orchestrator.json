@@ -1,0 +1,26 @@
+{
+  "name": "DevOps Orchestrator",
+  "description": "CI/CD and infrastructure management agent",
+  "model": "claude-haiku-4",
+  "maxContextTokens": 64000,
+  "rtk": {
+    "enabled": true,
+    "optimizationLevel": "aggressive",
+    "disallowedCommands": [
+      "terraform destroy",
+      "kubectl delete namespace"
+    ]
+  },
+  "compliance": {
+    "auditTrail": true
+  },
+  "experimentalFeatures": {
+    "autoDeploy": false,
+    "infrastructureAsCodeValidation": true
+  },
+  "responsibilities": [
+    "GitHub Actions workflows",
+    "Docker optimization",
+    "Deployment strategies"
+  ]
+}

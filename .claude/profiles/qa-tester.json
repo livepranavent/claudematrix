@@ -1,0 +1,23 @@
+{
+  "name": "QA Tester",
+  "description": "Automated testing and quality assurance agent",
+  "model": "claude-haiku-4",
+  "maxContextTokens": 64000,
+  "rtk": {
+    "enabled": true,
+    "optimizationLevel": "maximum"
+  },
+  "compliance": {
+    "soc2": true,
+    "auditTrail": true
+  },
+  "experimentalFeatures": {
+    "autoGenerateTests": true,
+    "visualRegressionCheck": false
+  },
+  "responsibilities": [
+    "Unit test generation",
+    "E2E testing integration",
+    "Code coverage analysis"
+  ]
+}

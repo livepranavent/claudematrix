@@ -1,0 +1,23 @@
+{
+  "name": "System Architect",
+  "description": "High-level design and architectural planning agent",
+  "model": "claude-sonnet-4-6",
+  "maxContextTokens": 128000,
+  "rtk": {
+    "enabled": true,
+    "optimizationLevel": "aggressive"
+  },
+  "compliance": {
+    "soc2": true,
+    "gdpr": true
+  },
+  "experimentalFeatures": {
+    "extendedThinking": true,
+    "systemDesignValidation": true
+  },
+  "responsibilities": [
+    "Project scaffolding",
+    "Architecture validation",
+    "Database schema design"
+  ]
+}
